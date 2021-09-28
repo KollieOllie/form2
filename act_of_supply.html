@@ -10,7 +10,7 @@
 .ms-grid1-0000-main {}
 .ms-grid1-0000-even {}
 .style9{
-	font-family: ''Times New Roman'';
+	font-family: 'Times New Roman';
 	font-size: medium;
 	text-align: center;
 }
@@ -191,23 +191,36 @@
         <td class="style16" style="width: 300px; position: relative">
           <strong>Директор</strong><br /> <br />
           <strong style="display: block; position: absolute; z-index: 20; top: 65px;">
-            Радченко Олександр Миколайович</strong> <br /><br/>
-          <!-- <Node_Inform paramname="IBS_POSTACH_FIO1" /> -->
+            <Node_Inform paramname="IBS_POSTACH_FIO1" />
+          </strong> <br /><br/>
         </td>
         <td class="style16" style="width: 300px; position: relative">
           <strong>Директор</strong> <br />
-          <strong style="display: block; position: absolute; z-index: 20; top: 65px;"><Node_Inform nodedenom="FIRMA" paramname="IBS_SIGNER" /></strong><br /> <br />
-          <strong><Node_Inform nodedenom="FIRMA" paramname="IBS_FIO1" /></strong> <br />
+          <strong style="display: block; position: absolute; z-index: 20; top: 65px;">
+            <!-- <Node_Inform nodedenom="FIRMA" paramname="IBS_SIGNER" /> -->
+             Рябцев Виктор Григоровмч
+          </strong><br /> <br />
+          <strong>
+            <Node_Inform nodedenom="FIRMA" paramname="IBS_FIO1" />
+          </strong> <br />
         </td>
       </tr>
       <tr class="style16" style="position: relative">
         <td class="style16">
-          <p style= "margin-block: 0; display: block; position: absolute; z-index: -10; font-weight: 700">_________________________________</p>
-          <p style="margin: 0; position: absolute; z-index: -10; top: 20px;">м.п.</p>
+          <p style="margin-block: 0; display: block; position: absolute; z-index: -10; font-weight: 700">
+            _________________________________
+          </p>
+          <p style="margin: 0; position: absolute; z-index: -10; top: 20px;">
+            м.п.
+          </p>
         </td>
-        <td class="style16" style="line-height: 5px">
-          <p style="margin: 0">_______________________</p>
-          <p style="margin: 0">м.п.</p>
+        <td class="style16">
+          <p style="margin-block: 0; display: block; position: absolute; z-index: -10; font-weight: 700">
+            _________________________________
+          </p>
+          <p style="margin: 0; position: absolute; z-index: -10; top: 20px;">
+            м.п.
+          </p>
         </td>
       </tr>
     </table>

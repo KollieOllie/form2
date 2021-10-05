@@ -13,7 +13,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border: 1px solid lightseagreen;
 }
 
@@ -260,14 +260,6 @@
 	font-family: Arial;
 	font-size: x-small;
 }
-.kolli {
-  box-sizing: border-box;
-  border: 1px solid red;
-
-}
-
-
-
 </style>
 </head>
 </header>
@@ -275,30 +267,20 @@
 <body>
 
 <div style="position: absolute; width: 617px; height: 874px; z-index: 1; left: 10px; top: 15px" id="layer1" class="style13">
-  <img style="float: left" src="https://akket.com/wp-content/uploads/2020/08/Fuchsia-OS-Google-Android-1.jpg" width="200" height="84" /><div style="position: absolute; width: 478px; height: 107px; z-index: 3; left: 137px; top: 211px" id="layer35"></div>
 	<div style="position: absolute; width: 601px; height: 82px; z-index: 1; left: 6px; top: 88px" id="layer5" class="style14">
-		<strong style="display: block; text-align: right;"> Зразок заповнення платіжного доручення</strong>
-    <ul>
-      <li>
-        Отримувач
-      </li>
-      <li>
-        <Node_Inform paramname="IBS_POSTACH_SHORT_NAME" />
-      </li>
-      <li>
-        КРЕДИТ рах.
-      </li>
-      <li>
-        СУМА
-      </li>
-
-    </ul>
-  
-		Банк отримувача
-    Код банку<br />
-	
+		<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Зразок заповнення платіжного доручення<br /><br>
+		Отримувач&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<Node_Inform paramname="IBS_POSTACH_SHORT_NAME" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;КРЕДИТ рах. 
+		№&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; СУМА<br />
+		<br />
+		<br />
+		Банк отримувача&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Код банку<br />
+		</strong>
+		<div style="position: absolute; width: 185px; height: 29px; z-index: 2; left: 291px; top: 26px" id="layer11" class="style13">
+		</div>
 	</div>
-	
+	<img style="float: left" src="IMG/logo.png" width="200" height="84" /><div style="position: absolute; width: 478px; height: 107px; z-index: 3; left: 137px; top: 211px" id="layer35">
 	<table style="width: 100%; height: 92px" class="style42">
 		<tbody class="style15">
 		<tr>
@@ -306,7 +288,7 @@
 		</tr>
 		<tr>
 			<td class="style41">п/р <Node_Inform paramname="IBS_POSTACH_BILL" /> в <Node_Inform paramname="IBS_POSTACH_BANK" />, 
-			МФО <Node_Inform paramname="IBS_POSTACH_MFO" /> </td>
+			МФО  <Node_Inform paramname="IBS_POSTACH_MFO" /> </td>
 		</tr>
 		<tr>
 			<td class="style41"><Node_Inform paramname="IBS_POSTACH_ADDRESS" /></td>
@@ -351,36 +333,42 @@
 		</table>
 	</div>
 	<div style="position: absolute; width: 592px; height: 24px; z-index: 8; left: 19px; top: 837px" id="layer29">
-		<strong>УВАГА!<br /> В призначенні платежу обов&#39;язково вказати номер даного 
-		рахунку № <Bill_Inform paramname="NUMBILL" /> (без пробілів)!<br />
+		<strong>УВАГА! В призначенні платежу обов&#39;язково вказати номер даного 
+		рахунку №<Bill_Inform paramname="NUMBILL" /> (без пробілів).<br />
 		У разі недотримання цієї умови оплата може бути не зарахована!</strong></div>
-	<div style="position: absolute; width: 131px; height: 117px; z-index: 7; left: 485px; top: 467px" id="layer28">
+	<div style="position: absolute; width: 95px; height: 120px; z-index: 7; left: 521px; top: 496px" id="layer28">
 		<table style="width: 100%" class="style37">
 			<!-- fpstyle: 33,010001100 -->
 			<tr>
-				<td class="style36" valign="middle" style="height: 16px"><Bill_Inform paramname="SUMALL" /></td>
+				<td class="style36" valign="middle" style="height: 16px">
+				<Bill_Inform paramname="SUMALL" /></td>
 			</tr>
 			<tr>
-				<td class="style35" valign="middle" style="height: 16px"><Bill_Inform paramname="SUMNDS" /></td>
+				<td class="style35" valign="middle" style="height: 16px">
+				<Bill_Inform paramname="SUMNDS" /></td>
 			</tr>
 			<tr>
-				<td style="height: 16px" class="style35" valign="middle"><Bill_Inform  paramname="SUMALLNDS" /></td>
+				<td style="height: 16px" class="style35" valign="middle">
+				<Bill_Inform paramname="SUMALLNDS" /></td>
 			</tr>
 			<tr>
 				<td class="style35" valign="middle" style="height: 16px"><Bill_Inform  paramname="OVERPAYMENT" /></td>
 			</tr>
 			<tr>
-				<td class="style35" valign="middle" style="height: 16px"><Bill_Inform  paramname="BALCUR" /></td>
+				<td class="style35" valign="middle" style="height: 16px">
+				<Bill_Inform  paramname="BALCUR" /></td>
 			</tr>
 			<tr>
-				<td class="style35" valign="middle" style="height: 16px"><strong><em><Bill_Inform  paramname="ALLPAY" /></em></strong></td>
+				<td class="style35" valign="middle" style="height: 17px">
+				<strong><em><Bill_Inform  paramname="ALLPAY" /></em></strong></td>
 			</tr>
 			<tr>
-				<td class="style35" valign="middle" style="height: 17px"><strong><em><Bill_Inform  paramname="ALLPAYNDS" /></em></strong></td>
+				<td class="style35" valign="middle" style="height: 17px">
+				<strong><em><Bill_Inform  paramname="ALLPAYNDS" /></em></strong></td>
 			</tr>
 		</table>
 	</div>
-	<div style="position: absolute; width: 148px; height: 114px; z-index: 7; left: 334px; top: 469px" id="layer27">
+	<div style="position: absolute; width: 226px; height: 114px; z-index: 7; left: 293px; top: 498px" id="layer27">
 		<table style="width: 100%; height: 110px;" class="style38">
 			<!-- fpstyle: 16,000000000 -->
 			<tr>
@@ -403,35 +391,44 @@
 				баланс з ПДВ:</td>
 			</tr>
 			<tr>
-				<td class="style39" style="width: 224px; height: 17px;"><strong><em>
-				Підлягає до оплати з ПДВ:</em></strong></td>
+				<td class="style39" style="width: 224px; height: 17px;"><strong>
+				<em>Підлягає до оплати з ПДВ:</em></strong></td>
 			</tr>
 			<tr>
-				<td class="style39" style="width: 224px; height: 17px;"><strong><em>
-				в т.ч. сума ПДВ:</em></strong></td>
+				<td class="style39" style="width: 224px; height: 17px;"><strong>
+				<em>в т.ч. сума ПДВ:</em></strong></td>
 			</tr>
 		</table>
-	</div>
-	<div style="position: absolute; width: 608px; height: 50px; z-index: 6; left: 8px; top: 418px" id="layer26" class="style28">
+</div>
+	<div style="position: absolute; width: 608px; height: 64px; z-index: 6; left: 8px; top: 418px" id="layer26" class="style28">
 		<table style="width: 100%; background-color: #66CCFF" class="style32">
 			<tr>
-				<td style="width: 38px" class="style30"><strong>№</strong></td>
-				<td style="width: 206px" class="style30"><strong>Товари (роботи, 
-				послуги)</strong></td>
-				<td style="width: 83px" class="style30">Кіл-ть</td>
-				<td class="style30" style="width: 42px">Од. вим.</td>
-				<td class="style30" style="width: 93px">Ціна без ПДВ, грн/кВт·год</td>
-				<td class="style30">Сума без ПДВ, грн.</td>
+				<td class="style30" style="width: 30px"><strong>№</strong></td>
+				<td class="style30" style="width: 210px"><strong>Товари (роботи, послуги)</strong></td>
+				<td class="style30" style="width: 50px"><b><strong>Клас<br />напруги</strong></b></td>
+				<td class="style30" style="width: 50px"><strong>Кіл-ть</strong></td>
+				<td class="style30" style="width: 45px"><b>Од. вим.</b></td>
+				<td class="style30" style="width: 75px"><strong>Ціна без ПДВ, грн.</strong></td>
+				<td class="style30" style="width: 75px"><strong>Сума без ПДВ, грн.</strong></td>
 			</tr>
 		</table>
-		<table style="width: 100%; background-color: #FFFFFF" class="style33">
+		<table style="width: 100%; background-color: #FFFFFF; height: 41px;" class="style33">
 			<tr>
-				<td style="width: 38px" class="style30">1</td>
-				<td class="style29" style="width: 206px">Електрична енергія</td>
-				<td style="width: 83px" class="style30"><Bill_Inform class="0"  paramname="VAL" /></td>
-				<td style="width: 42px" class="style30">кВт·год</td>
-				<td class="style30" style="width: 93px"><Bill_Inform class="0"  paramname="COST" /></td>
-				<td class="style30"><Bill_Inform class="0"  paramname="SUM" /></td>
+				<td class="style30" style="width: 30px">1</td>
+				<td class="style29" style="width: 210px" rowspan="2">Компенсація за послугу розподілу електричної енергії, що надається <Bill_Inform nodedenom="FIRMA" paramname="OPERATORNAME" /></td>
+				<td class="style30" style="width: 50px">1</td>
+				<td class="style30" style="width: 50px"><Bill_Inform class="1"  paramname="VAL" /></td>
+				<td class="style30" style="width: 45px">кВт·год</td>
+				<td class="style30" style="width: 75px"><Bill_Inform class="1"  paramname="COST" /></td>
+				<td class="style30" style="width: 75px"><Bill_Inform class="1"  paramname="SUM" /></td>
+			</tr>
+			<tr>
+				<td class="style30" style="width: 30px">2</td>
+				<td class="style30" style="width: 50px">2</td>
+				<td class="style30" style="width: 50px"><Bill_Inform class="2"  paramname="VAL" /></td>
+				<td class="style30" style="width: 45px; height: 21px;">кВт·год</td>
+				<td class="style30" style="width: 75px"><Bill_Inform class="2"  paramname="COST" /></td>
+				<td class="style30" style="width: 75px"><Bill_Inform class="2"  paramname="SUM" /></td>
 			</tr>
 		</table>
 	</div>
@@ -445,8 +442,7 @@
 		запитання, оцінити роботу операторів мереж та постачальників газу і 
 		електроенергії . Мобільний додаток можна завантажити з <strong>Google 
 		Play</strong> та <strong>App Store</strong> за назвою </span><strong>
-		<span class="style16">EnergyOnline</span></strong>.
-  </div>
+		<span class="style16">EnergyOnline</span></strong>.</div>
 	<div style="position: absolute; width: 620px; height: 83px; z-index: 2; left: 3px; top: 1px" id="layer6" class="style15">
 	</div>
 	<div style="position: absolute; width: 185px; height: 12px; z-index: 2; left: 298px; top: 151px" id="layer19" class="style13">
@@ -509,6 +505,7 @@
 	</table>
 </div>
 
+
 <div style="position: absolute; width: 114px; height: 115px; z-index: 5; left: 329px; top: 706px" id="layer30">
 	<img src="IMG/seal.jpg" width="125" height="121" alt = "seal" /></div>
 <div style="position: absolute; width: 515px; height: 38px; z-index: 9; left: 111px; top: 633px" id="layer36" class="style45">
@@ -533,4 +530,6 @@
 </div>
 </html>
 </body>
+
+
 
